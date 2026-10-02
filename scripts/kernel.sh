@@ -15,7 +15,10 @@ scripts/config --set-str LOCALVERSION "-$LOGIN" --disable LOCALVERSION_AUTO \
     --enable DEVTMPFS --enable DEVTMPFS_MOUNT \
     --enable EXT4_FS --enable SATA_AHCI --enable ATA_PIIX \
     --enable E1000 --enable VIRTIO_PCI --enable VIRTIO_NET --enable VIRTIO_BLK \
+    --enable NET_VENDOR_AMD --enable PCNET32 \
     --enable FB --enable FRAMEBUFFER_CONSOLE --enable FB_VESA \
+    --enable DRM --enable DRM_VMWGFX --enable DRM_VBOXVIDEO \
+    --enable DRM_FBDEV_EMULATION --enable INPUT_EVDEV \
     --module SND_INTEL8X0 --module I2C_PIIX4 --module VBOXGUEST \
     --module BLK_DEV_LOOP --module FUSE_FS
 make olddefconfig
